@@ -45,13 +45,13 @@ resource "aws_security_group_rule" "blog_http_in" {
   aws_security_group_id = aws_security_group.blog.id
 }
 
-resource "aws_security_group0" "blog" {
+resource "aws_security_group" "blog" {
   name        = "blog"
   description = "Allow http and https in. Allow everything out"
   vpc_id      = data.aws_vpc.default.vpc_id
 }
 
-resource "aws_security_group_rule1" "blog_http_in" {
+resource "aws_security_group_rule" "blog_http_in" {
   type      = "ingress"
   from_port = 443
   to_port   = 443
@@ -61,13 +61,13 @@ resource "aws_security_group_rule1" "blog_http_in" {
   aws_security_group_id = aws_security_group.blog.id
 }
 
-resource "aws_security_group2" "blog" {
+resource "aws_security_group" "blog" {
   name        = "blog"
   description = "Allow http and https in. Allow everything out"
   vpc_id      = data.aws_vpc.default.vpc_id
 }
 
-resource "aws_security_group_rule3" "blog_everything_out" {
+resource "aws_security_group_rule" "blog_everything_out" {
   type      = "engress"
   from_port = 0
   to_port   = 0
